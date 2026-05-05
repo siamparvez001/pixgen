@@ -1,5 +1,6 @@
 import { Button, Card, Chip, Separator } from "@heroui/react";
 import Image from "next/image";
+import Link from "next/link";
 import { FaHeart } from "react-icons/fa";
 import { LiaDownloadSolid } from "react-icons/lia";
 
@@ -30,7 +31,9 @@ const PhotoCard = ({ photo }) => {
                     <p>{photo.downloads}</p>
                 </div>
             </div>
-            <Button variant="outline" className={'w-full'}>View</Button>
+            <Link href={`/all-photos/${photo.id}`}>
+                <Button variant="outline" className={'w-full'}>View</Button>
+            </Link>
         </Card>
     );
 };

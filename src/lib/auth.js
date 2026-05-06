@@ -10,11 +10,12 @@ export const auth = betterAuth({
 
         client
     }),
+    trustedOrigins: ["http://localhost:3000", "https://pixgen-black.vercel.app"],
     emailAndPassword: {
         enabled: true,
     },
     socialProviders: {
-        google:{
+        google: {
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET
         }

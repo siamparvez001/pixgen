@@ -36,7 +36,7 @@ export default function SignUpPage() {
         // console.log(name, email, password)
         console.log({ data, error })
         if (error) {
-            alert('Something is wrong')
+            // alert('Something is wrong')
             return;
         }
         if (!error) {
